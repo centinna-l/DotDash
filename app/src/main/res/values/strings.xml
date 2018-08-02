@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DotnDash</string>
+    <string name="min_pass">Password is less than 6 characters</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_fingerprint">DotnDash Smart Login</string>
+    <string name="desc_fingerprint">Please place your fingertip on the scanner to verify your identity</string>
+    <string name="note">(Fingerprint sign in makes your app login much faster. Your device should have at least one fingerprint registered in device settings)</string>
+    <string name="title_activity_home">Fingerprint</string>
+    <string name="activity_home_desc">You have successfully logged in with fingerprint authentication</string>
+    <string name="activity_home_note">Close and re-open the app to see the fingerprint auth screen again</string>
+</resources>

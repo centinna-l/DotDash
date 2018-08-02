@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "91556530712",
+    "firebase_url": "https://dot-dash.firebaseio.com",
+    "project_id": "dot-dash",
+    "storage_bucket": "dot-dash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91556530712:android:960527bf1bdcd4ff",
+        "android_client_info": {
+          "package_name": "com.example.jerry.dot_dash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91556530712-bkenuagb38nle0n4m821t236n8k06aha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jerry.dot_dash",
+            "certificate_hash": "ad9149017cded419994c396be4989ce3920de7a2"
+          }
+        },
+        {
+          "client_id": "91556530712-q8nc47cb8epflmfhjjb6thvop2gp6r45.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jerry.dot_dash",
+            "certificate_hash": "325faddae53663d79f7c2c8a18d2f17053861683"
+          }
+        },
+        {
+          "client_id": "91556530712-8laqde24chpvjiso8agr8l60icubsim2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7KgWB4UyfvkevkMsfUfUYWyrdD1KS7n8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91556530712-8laqde24chpvjiso8agr8l60icubsim2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
