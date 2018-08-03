@@ -38,6 +38,10 @@ import javax.crypto.SecretKey;
  * Created by Jerry and Jishnu on 8/1/2018.
  */
 
+/**
+DO NOT PLAY AROUND WITH THIS ACTIVITY OR THE FINGERPRINT HANDLER NO CHANGES REQUIRED IN THESE TWO FILES.
+
+*/
 public class FingeringActivity extends Activity {
     private KeyStore keyStore;
     // Variable used for storing the key in the Android Keystore container
@@ -57,6 +61,7 @@ public class FingeringActivity extends Activity {
         setContentView(R.layout.activity_fingering);
         // Initializing both Android Keyguard Manager and Fingerprint Manager
         KeyguardManager keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
+        //depreciated function but will still work unless played upon. So please be very careful with this  Activity.
         FingerprintManager fingerprintManager = (FingerprintManager) getSystemService(FINGERPRINT_SERVICE);
 
         sharedPreferences = getApplicationContext().getSharedPreferences("Login", 0);

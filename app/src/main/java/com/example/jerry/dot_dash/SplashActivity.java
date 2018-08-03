@@ -43,6 +43,7 @@ public class SplashActivity extends Activity {
         final String passPref = sharedPreferences.getString("PASSWORD", null);
 
 
+        //The handler function
 
         new Handler().postDelayed(new Runnable() {
             @Override

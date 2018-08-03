@@ -61,18 +61,19 @@ public class login_sign_up extends Activity {
         setContentView(R.layout.activity_login_sign_up);
 
 
-        uptodown = AnimationUtils.loadAnimation(login_sign_up.this, R.anim.uptodown);
-       // layout1.setAnimation(uptodown);
+        //uptodown = AnimationUtils.loadAnimation(login_sign_up.this, R.anim.uptodown);
 
-        // mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        //All the buttons declared here.
         signup = (Button) findViewById(R.id.signup);
         remberMe = findViewById(R.id.remChkbox);
         login = (Button) findViewById(R.id.login);
         forgot = (Button) findViewById(R.id.forgot);
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
+        //Creating the instance of the firebase instance.
         mAuth = FirebaseAuth.getInstance();
+        //SharedPreferences.
         sharedPreferences = getApplicationContext().getSharedPreferences("Login", 0);
         editor = sharedPreferences.edit();
         progressDialog = new ProgressDialog(this);
@@ -109,6 +110,7 @@ public class login_sign_up extends Activity {
                 progressDialog.setMessage("Logging in please wait....");
                 progressDialog.show();
 
+                //The predefined function to login using firebase.
                 mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(login_sign_up.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -131,6 +133,7 @@ public class login_sign_up extends Activity {
             }
         });
 
+        //if the shared pref is true then it will set the text in the editText if not it will just pass a null reff.
         emailPref = sharedPreferences.getString(prefEmail, null);
         passPref = sharedPreferences.getString(prefPass, null);
         inputEmail.setText(emailPref);
@@ -139,6 +142,7 @@ public class login_sign_up extends Activity {
     }
 
 
+    //if the remember me is checked then this function is called.
     public void rememberMeChecked() {
 
         if (remberMe.isChecked()) {
@@ -169,6 +173,7 @@ public class login_sign_up extends Activity {
 
     }
 
+    //this function is used when we register and then we try to login. Only those users will be able to login who verified their email.
     private void checkIfEmailVerified() {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 

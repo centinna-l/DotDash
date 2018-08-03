@@ -101,6 +101,8 @@ public class MainActivity extends Activity {
         };
     }
 
+
+    //these Override methods will help you to  sign out of the application.
     @Override
     protected void onStart() {
         super.onStart();
