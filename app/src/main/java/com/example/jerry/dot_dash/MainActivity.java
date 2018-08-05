@@ -48,11 +48,10 @@ public class MainActivity extends Activity {
 
 
         final String emailPref = sharedPreferences.getString("EMAIL", null);
-        final String passPref = sharedPreferences.getString("PASSWORD", null);
+        //final String passPref = sharedPreferences.getString("PASSWORD", null);
 
         if (emailPref!=null){
-            String user= emailPref
-                    .substring(0,emailPref.indexOf('@'));
+            String user= emailPref.substring(0,emailPref.indexOf('@'));
             textView.setText("Hello "+user);
         }else
         {
