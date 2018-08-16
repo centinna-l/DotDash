@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * Created by Jerry and Jishnu on 8/1/2018.
+ * today date 16/8/2018
  */
 
 public class SplashActivity extends Activity {
